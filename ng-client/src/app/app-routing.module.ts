@@ -4,17 +4,30 @@ import {
   RouterModule,
 } from '@angular/router';
 
+import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
+import { EmployeeNewComponent } from './employee/employee-new/employee-new.component';
+
+import { TimesheetListComponent } from './timesheet/timesheet-list/timesheet-list.component';
+import { TimesheetNewComponent } from './timesheet/timesheet-new/timesheet-new.component';
+import { TimesheetComponent } from './timesheet/timesheet.component';
+import { TimesheetEntryComponent } from './timesheet/timesheet-entry/timesheet-entry.component';
+
+import { ProjectListComponent } from './project/project-list/project-list.component';
+import { ProjectNewComponent } from './project/project-new/project-new.component';
+
 import { PageNotFoundComponent } from './core/not-found.component';
 
 const appRoutes: Routes = [
-  {
-    path: 'employees',
-    loadChildren: './employee/employee.module#EmployeeModule',
-  },
-  {
-    path: 'projects',
-    loadChildren: './project/project.module#ProjectModule',
-  },
+  { path: 'employees', component: EmployeeListComponent },
+  { path: 'employees/new', component: EmployeeNewComponent },
+
+  { path: 'timesheets', component: TimesheetListComponent },
+  { path: 'timesheets/new', component: TimesheetNewComponent },
+  { path: 'timesheets/:id', component: TimesheetComponent },
+  { path: 'timesheets/:id/entry', component: TimesheetEntryComponent },
+
+  { path: 'projects', component: ProjectListComponent },
+  { path: 'projects/new', component: ProjectNewComponent },
   {
     path: '',
     redirectTo: '/projects',

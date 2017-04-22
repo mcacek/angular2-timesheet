@@ -20,7 +20,6 @@ import { EmployeeDirective } from './employee-list/employee.directive';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 import { EmployeeService } from './employee.service';
-import { EmployeeRoutingModule } from './employee-routing.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,6 @@ import { EmployeeRoutingModule } from './employee-routing.module';
   imports: [
     CommonModule,
     FormsModule,
-    EmployeeRoutingModule,
     MdIconModule,
     MdButtonModule,
     MdCardModule,

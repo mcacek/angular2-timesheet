@@ -15,7 +15,6 @@ import { ProjectRootComponent } from './project-root/project-root.component';
 import { ProjectNewComponent } from './project-new';
 import { ProjectListComponent } from './project-list';
 import { ProjectService } from './project.service';
-import { ProjectRoutingModule } from './project-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { ProjectRoutingModule } from './project-routing.module';
   imports: [
     CommonModule,
     FormsModule,
-    ProjectRoutingModule,
     MdIconModule,
     MdInputModule,
     MdListModule,
