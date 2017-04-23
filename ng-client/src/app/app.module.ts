@@ -16,6 +16,10 @@ import { LoginComponent } from './core/login.component';
 import { LoginRoutingModule } from './core/login-routing.module';
 import { NavigationComponent } from './core/navigation.component';
 
+import { ProjectModule } from './project/project.module';
+import { TimesheetModule } from './timesheet/timesheet.module';
+import { EmployeeModule } from './employee/employee.module';
+
 const host = window.location.hostname;
 let baseUrl = 'https://localhost:8080';
 
@@ -31,6 +35,9 @@ const extHttpConfig = {
   imports: [
     BrowserModule,
     CoreModule.forRoot(extHttpConfig),
+    ProjectModule,
+    TimesheetModule,
+    EmployeeModule,
     LoginRoutingModule,
     AppRoutingModule,
     MaterialModule.forRoot(),
