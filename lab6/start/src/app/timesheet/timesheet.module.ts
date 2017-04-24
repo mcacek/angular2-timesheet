@@ -21,12 +21,12 @@ import { TimesheetNewComponent } from './timesheet-new/timesheet-new.component';
 import { TimesheetListComponent } from './timesheet-list/timesheet-list.component';
 import { TimesheetDetailComponent } from './timesheet-detail/timesheet-detail.component';
 import { TimesheetEntryComponent } from './timesheet-entry/timesheet-entry.component';
-import { TimesheetStatusPipe } from './timesheet-list/timesheet-status.pipe';
+// import the new pipe
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    TimesheetStatusPipe,
+    // add the new pipe to the declarations list
     TimesheetComponent,
     TimesheetDetailComponent,
     TimesheetEntryComponent,
